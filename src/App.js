@@ -37,6 +37,8 @@ function App() {
         itemWidth,
         totalSlide: [...slideRef.current.children].length,
         offsetWidth,
+        // See photos here
+        // https://lh3.googleusercontent.com/suvKrFiZO0nUpe1jDvQvLT6sZP7T06vnHUKOQhcRnvu46reeRn9YCuq5CYFJ43jM2s5XPFGHKP8_ZxS3rgjmDV53dUwOe23xOKdrT7C_bg0jS6ahoihrleZ9C3vYh4XSww1kGogkLMf0si4QMfYgT3wtAWI05MN6xcF19KKCLcKV1tBjN-1xj2639bCiYZmYrwhNWQ38kd5Mg9t-uQcRgqpmrOEwSpZxzvPaN9j8enJNR1ot-zM3j6rgYLg74xG9uugmGV7nyWqcrSdhLEslwH50WKzcDCyd4Nh4K4m8pbUndzHHZGW5qHqJ6kBypTXAnaayHmIZZ_lZDVPaduRJzvQAnV_AGlt7pugOX58-7CRrYrzS4RFIh0R7glOJVQN-bnariAw2QfKM73Zf0Urkm4a1Qgd5hEkVKrhg9h6pIRRIQ2igYmDwif9vPJJJsJaKaUXOA0dTkXlkksSVPuqtnu0QSuvkSTfM5FBGv8BVqjwPGrh-R61HEor1JoGpqgkr6Sid__sOGxoZi7sPYoiaitX7rGvjkEkafwFMV0nOwtRz6vCgLBP9ZVQSViRlXoYQ6SQy4gLPn1n6GKdGYkhBukb5f1CqMDsCqBAn84rjyH2FeI8ipvvzXEWNzuOghnz2RRHpHwozqOUFQRJOkjis73ZNsVEcr7zOinlvUw64Qe_hcBIRH1zmX07V7nUPXU62NJ5PYMYUNrsATlAgOu8XJXc=w756-h1007-no?authuser=0
         percentItemEnd:
           (widthItemHidden + containerPadding) /
           (itemWidth + columnGap).toFixed(2),
