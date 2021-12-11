@@ -1,0 +1,62 @@
+.layout {
+  overflow: hidden;
+  padding-top: 4.656rem;
+  .layout-container {
+    padding-left: 1.3125rem;
+    padding-right: 1.3125rem;
+  }
+  &-img {
+    img {
+      display: block;
+    }
+  }
+  &-message {
+    padding-top: 0.906rem;
+  }
+  &-content {
+    padding: 2.781rem 0;
+    .layout-item {
+      .layout-title {
+        font-size: 1.125rem;
+        color: #333;
+        font-family: "SDGothicNeobTTF-dMd";
+        letter-spacing: -0.45px;
+        padding-bottom: 0.875rem;
+      }
+      .layout-sub-title {
+        font-size: 0.813rem;
+        color: #666;
+        letter-spacing: -0.33px;
+        line-height: 1.313rem;
+      }
+    }
+    .layout-item + .layout-item {
+      padding-top: 1.875rem;
+    }
+  }
+  &-slide {
+    overflow: hidden;
+    .layout-slide-wrapper {
+      display: flex;
+      column-gap: 15px;
+
+      .layout-slide-item {
+        flex: 1 0 11.875rem;
+
+        &-title {
+          font-size: 0.938rem;
+          color: #333;
+          line-height: 1;
+          letter-spacing: -0.38px;
+          font-family: "SDGothicNeobTTF-dMd";
+          padding-bottom: 0.906rem;
+        }
+        &-img {
+          display: block;
+          width: 11.875rem;
+          height: 7.5rem;
+        }
+      }
+    }
+  }
+}
