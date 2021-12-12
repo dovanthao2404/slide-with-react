@@ -70,8 +70,9 @@ function App() {
             ? infoSlide.currentSlide + 1
             : infoSlide.currentSlide - 1;
         if (Math.abs(infoSlide.currentSlide) === infoSlide.totalSlide - 2) {
-          console.log(infoSlide.percentItemEnd);
-          currentSlide = currentSlide + (1 - infoSlide.percentItemEnd);
+          if (widthClientX < 0) {
+            currentSlide = currentSlide + (1 - infoSlide.percentItemEnd);
+          }
         }
         if (
           Math.abs(infoSlide.currentSlide) < 1 &&
@@ -89,8 +90,12 @@ function App() {
             Math.abs(Math.ceil(infoSlide.currentSlide)) ===
               infoSlide.totalSlide - 2
               ? infoSlide.currentSlide
+              : widthClientX > 0 && infoSlide.currentSlide % 1 !== 0
+              ? Math.ceil(infoSlide.currentSlide)
               : currentSlide;
         }
+        console.log(infoSlide.currentSlide);
+        console.log(currentSlide);
 
         setInfoSlide({
           ...infoSlide,
